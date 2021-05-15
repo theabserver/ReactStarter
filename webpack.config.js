@@ -7,7 +7,8 @@ module.exports = {
     path: path.resolve(__dirname, "public"),
     filename: "main.js",
   },
-  target: "node",
+  target: "web",
+  devtool: "inline-source-map",
   devServer: {
     port: "9500",
     contentBase: ["./public"],
@@ -31,4 +32,4 @@ module.exports = {
       },
     ],
   },
-};
+}
